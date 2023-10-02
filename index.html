@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Formulário Contato</title>
+    <script src="https://kit.fontawesome.com/3ad89c8884.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+    <div class="container">
+    
+        <div class="containerContato">
+
+            <form name="formularioContato">
+
+                <div class="contato">
+                    <h3>Criar contato</h3>
+
+                    <div class="botao">
+                        <input type="submit" class="enviar" onclick="enviarMensagem();" value="Salvar contato" />
+                    </div>
+                </div>
+
+                <div>
+                    <h3> Salvar em: </h3>
+
+                </div>
+
+                <div class="displayContato">
+                    <div class="camera">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+
+                    <div class="dados">
+
+                        <div class="nome">
+                            <div>
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <div>
+                                <input type="text" id="idNome" placeholder="Digite seu nome" required="required" name="nome" />
+                            </div>
+                        </div>
+
+                        <div class="sobrenome">
+                            <input type="text" id="idNome" placeholder="sobrenome" required="required" name="sobrenome" />
+                        </div>
+
+                        <div class="divEmpresa">
+                            
+                            <div class="imagemEmpresa">
+                                <i class="fa-solid fa-industry"></i>
+                            </div>
+
+                            <div class="empresa">
+                                <input type="text" id="idNome" placeholder="empresa" required="required" name="empresa"/>
+                            </div>
+
+                        </div>
+
+                        
+                    
+                        <div class="divFormulario">
+
+                            <div class="formulario">
+                                
+                                <label for="opcao">Escolha uma opção: </label>
+                                <select name="Marcador">
+                                    <option value="Celular"> Celular</option>
+                                    <option value="telefone"> Telefone</option>
+                                    <option value="fumaça"> Sinal de fumaça</option>
+                                
+                                </select>
+                            </div>
+
+                            <div>
+                                <input type="text" id="idNome" placeholder="Digite seu telefone" required="required" name="empresa" />
+                            </div>
+
+                        </div>
+
+                        <div class="divEmail">  
+                            
+                            <div class="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div>
+                                <input type="email" id="idEmail" placeholder="seuemail@mail.com" name="email"/>
+                            </div>
+                        </div> 
+
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
